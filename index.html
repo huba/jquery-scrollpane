@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="jquery.scrollbar.style.css"/>
+	
+	<style>
+		.testPane
+		{
+			width: 300px;
+			height: 100px;
+			background: "yellow";
+		}
+
+		.testPane2
+		{
+			margin-top: 50px;
+			width: 300px;
+			height: 400px;
+			background: "yellow";
+		}
+	</style>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".testPane").scrollbar({
+				'verticalSide' : 'right'
+			}).css({background: 'red'});
+			$(".testPane2").scrollbar({
+				'axis' : 'both'
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="testPane">
+		<div class="content">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+			sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+			ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit
+			esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+			occaecat cupidatat non proident, sunt in culpa qui officia
+			deserunt mollit anim id est laborum.
+		</div>
+	</div>
+	
+	<div class="testPane2">
+		<div class="content">
+			<img src="http://www.psychologytoday.com/files/u736/86random-f1.1.gif" />
+		</div>
+	</div>
+	
+	<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />
+	sed do eiusmod tempor incididunt ut labore et dolore magna<br />
+	aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br />
+	ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis<br />
+	aute irure dolor in reprehenderit in voluptate velit<br />
+	esse cillum dolore eu fugiat nulla pariatur. Excepteur sint<br /> 
+	occaecat cupidatat non proident, sunt in culpa qui officia<br />
+	deserunt mollit anim id est laborum.-->
+	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+
+<script src="jquery.mousewheel.js"></script><!--This is not included in the repository make sure you get this before expecting something to happen.-->
+
+<script src="jquery.scrollbar.js"></script>
+</body>
+</html>

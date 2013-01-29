@@ -1,0 +1,59 @@
+.container
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.container div
+{
+	position: absolute;
+	float: none;
+}
+
+.container .content
+{
+}
+
+/*class definitions for vertical scrollbar*/
+.container .verticalScrollbar
+{
+	width: 15px;
+	top: 0px;
+	height: 100%;
+}
+
+.container .verticalScrollbar .scrollTrack
+{
+	/*background-color: grey;*/
+	width: 5px;
+	top: 0px;
+	height: 100%;
+}
+
+.container .verticalScrollbar .scrollHandle
+{
+	background-color: black;
+	width: 100%;
+}
+
+/*class definitions for horizontal scrollbar*/
+.container .horizontalScrollbar
+{
+	height: 15px;
+	left: 0px;
+	width: 100%;
+}
+
+.container .horizontalScrollbar .scrollTrack
+{
+	/*background-color: grey;*/
+	height: 5px;
+	left: 0px;
+	width: 100%;
+}
+
+.container .horizontalScrollbar .scrollHandle
+{
+	background-color: black;
+	height: 100%;
+}
